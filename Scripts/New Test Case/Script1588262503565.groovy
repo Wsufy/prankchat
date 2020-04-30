@@ -19,5 +19,13 @@ Mobile.startApplication('C:\\Users\\Elizabeth\\Downloads\\com.prankapps.prankcha
 
 Mobile.setText(findTestObject('android.widget.EditText0 -  email'), 'test', 0)
 
+Mobile.startApplication('C:\\Users\\Elizabeth\\Downloads\\com.prankapps.prankchat (1).apk', true)
+
+Mobile.setText(findTestObject('android.widget.EditText0 -  email (1)'), 'testwsufy@gmail.com', 0)
+
+Mobile.setText(findTestObject('android.widget.EditText0 -  '), '12345678', 0)
+
+Mobile.closeApplication()
+
 Mobile.closeApplication()
 
