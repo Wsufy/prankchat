@@ -15,9 +15,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+GlobalVariable.sessionid = CustomKeywords.'com.testwithhari.katalon.plugins.Browserstack.getCurrentTestRunSessionID'()
 Mobile.startApplication('C:\\Users\\Elizabeth\\Downloads\\com.prankapps.prankchat (2).apk', true)
 
-Mobile.tap(findTestObject('null'), 0)
+Mobile.verifyElementText(findTestObject('лента/кнопка профиль/android.widget.TextView0 - '), 'тест')
 
 Mobile.tap(findTestObject('null'), 0, FailureHandling.STOP_ON_FAILURE)
 
